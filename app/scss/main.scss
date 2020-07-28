@@ -114,7 +114,6 @@ nav.active {
   cursor: pointer;
 }
 
-
 .menu_switcher span {
   position: absolute;
   display: block;
@@ -128,6 +127,7 @@ nav.active {
 }
 
 .second-switcher {
+
   span {
     background: #fff;
   }
@@ -155,21 +155,17 @@ nav.active {
 }
 
 .menu_switcher.active span:nth-child(1) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .menu_switcher.active span:nth-child(3) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .menu_switcher.active {
   top: 40px;
   left: 70px;
 }
-
-
 
 .header__menu .header_form {
   position: absolute;
@@ -188,13 +184,11 @@ nav.active {
 .header__menu li.header_form:hover form {
   display: flex;
   right: 0;
-  -webkit-animation: fade 0.5s ease-in-out;
-          animation: fade 0.5s ease-in-out;
+  animation: fade 0.5s ease-in-out;
 }
 
 .header .header__logo a {
-  -webkit-animation: fade 3s ease-in-out;
-          animation: fade 3s ease-in-out;
+   animation: fade 3s ease-in-out;
 }
 
 @keyframes fade {
@@ -267,7 +261,6 @@ nav.active {
   }
 }
 
-
 #projects {
   display: grid;
 
@@ -297,23 +290,20 @@ nav.active {
       margin-top: 68px;
     }
 
-    
-
     .box {
       display: grid;
       justify-content: center;
       height: 100%;
-      
 
       .box-desc {
         margin-top: 37px;
-  
+
         h1 a {
           font-size: 22px;
           font-weight: 400;
           line-height: 38px;
         }
-  
+
         p {
           color: #060606;
           font-weight: 600;
@@ -330,8 +320,7 @@ nav.active {
     line-height: 36px;
     text-transform: uppercase;
     margin-top: 50px;
-    
-    
+
     a {
       color: #67b3ff;
 
@@ -386,6 +375,7 @@ nav.active {
         &:nth-child(8)  {
           border-right: none;
         }
+
         &:nth-child(5),
         &:nth-child(6),
         &:nth-child(7),
@@ -468,7 +458,6 @@ nav.active {
       font-family: "Source Sans Pro Semi Bold";
       font-size: 36px;
       font-weight: 600;
-      
 
       a {
         color: #99f7e2;
@@ -535,7 +524,6 @@ nav.active {
           }
         }
       }
-
     }
 
     .rights {
@@ -543,8 +531,6 @@ nav.active {
     }
   }
 }
-
-
 
 @media (max-width: 1300px) {
   #welcome-section {
@@ -569,11 +555,11 @@ nav.active {
     padding-left: 40px;
     max-width: 100%;
 }
+
   #welcome-section #h1-hero {
     text-align: center;
     font-size: 150px;
   }
-
 
   #section-clients .box-clients h2 {
     padding-top: 120px;
@@ -583,7 +569,6 @@ nav.active {
     grid-template-columns: repeat(2,1fr);
 
     .box-logo {
-
       &:nth-child(2),
       &:nth-child(6)  {
         border-right: none;
@@ -653,7 +638,6 @@ nav.active {
     grid-template-columns: minmax(150px, 455px);
     gap: 40px;
   }
-
 
   #section-clients .box-clients .logos {
     grid-template-columns: repeat(2,1fr);
@@ -733,7 +717,7 @@ nav.active {
     position: absolute;
     top: 70px;
     right: 100px;
-}
+  }
 }
 
 @media (max-width: 400px) {
@@ -765,4 +749,5 @@ nav.active {
   #footer {
     padding: 0;
   }
+
 }
