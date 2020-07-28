@@ -272,7 +272,7 @@ nav.active {
   &::before {
     content: "";
     background-color: #f5f3f8;
-    height: 100%;
+    min-height: 315px;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -339,7 +339,7 @@ nav.active {
   &::before {
     content: "";
     background-color: #ECE7F8;
-    height: 100%;
+    min-height: 512px;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -388,11 +388,29 @@ nav.active {
         }
       }
     }
+
+    .arrows {
+      display: flex;
+      justify-content: end;
+      gap: 1px;
+
+      .arrow-box {
+        background-color: #f1f1f1;
+
+        a {
+          display: block;
+          padding: 14px 21px;
+          color: #666666;
+          font-size: 30px;
+        }
+      }
+    }
   }
 }
 
 #footer-intro {
   min-height: 452px;
+  margin-top: 150px;
   padding-top: 98px;
   background-color: #7452a3;
   display: grid;
